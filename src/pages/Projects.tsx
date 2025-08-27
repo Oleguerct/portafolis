@@ -61,76 +61,32 @@ const Projects: React.FC = () => {
               return 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzM3NDE1MSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiM5Y2EzYWYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5JbWF0Z2UgZGVsIFByb2plY3RlPC90ZXh0Pjwvc3ZnPg==';
             };
 
-            // Get description based on project type
+            // Get description based on project type - shortened for cleaner cards
             const getDescription = (project: any) => {
+              let description;
               if (isLegacyProject(project)) {
-                return project.shortDescription;
+                description = project.shortDescription;
               } else {
-                return project.summary;
+                description = project.summary;
               }
+              // Truncate long descriptions to keep cards compact
+              return description.length > 120 ? description.substring(0, 120) + '...' : description;
             };
 
-            // Get technologies based on project type
+            // Get technologies based on project type - limit to 3 for cleaner cards
             const getTechnologies = (project: any) => {
+              let technologies;
               if (isLegacyProject(project)) {
-                return project.technologies;
+                technologies = project.technologies;
               } else {
-                return project.techStack;
+                technologies = project.techStack;
               }
+              // Show only first 3 technologies to avoid overwhelming the card
+              return technologies.slice(0, 3);
             };
 
-            // Get category display based on project type
-            const getCategoryDisplay = (project: any) => {
-              if (isLegacyProject(project)) {
-                return projectCategories.find(cat => cat.id === project.category)?.name;
-              } else {
-                return project.category[0]; // Show first category for enhanced projects
-              }
-            };
 
-            // Get date based on project type
-            const getDate = (project: any) => {
-              if (isLegacyProject(project)) {
-                return project.date;
-              } else {
-                return '2024'; // Default for enhanced projects without date
-              }
-            };
 
-            // Get links based on project type
-            const getLinks = (project: any) => {
-              if (isLegacyProject(project)) {
-                return (
-                  <>
-                    {project.demoUrl && (
-                      <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="project-link demo">
-                        Demo
-                      </a>
-                    )}
-                    {project.githubUrl && (
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="project-link github">
-                        GitHub
-                      </a>
-                    )}
-                  </>
-                );
-              } else {
-                return (
-                  <>
-                    {project.links.caseStudy && (
-                      <a href={project.links.caseStudy} target="_blank" rel="noopener noreferrer" className="project-link case-study">
-                        Case Study
-                      </a>
-                    )}
-                    {project.links.site && (
-                      <a href={project.links.site} target="_blank" rel="noopener noreferrer" className="project-link site">
-                        Web
-                      </a>
-                    )}
-                  </>
-                );
-              }
-            };
 
             return (
               <div key={project.id} className="project-card">
@@ -149,26 +105,14 @@ const Projects: React.FC = () => {
                   </div>
                 </div>
                 <div className="project-content">
-                  <div className="project-meta">
-                    <span className="project-category">
-                      {getCategoryDisplay(project)}
-                    </span>
-                    <span className="project-date">{getDate(project)}</span>
-                  </div>
                   <h3 className="project-title">
                     <Link to={`/projects/${project.id}`}>{project.title}</Link>
                   </h3>
                   <p className="project-description">{getDescription(project)}</p>
                   <div className="project-technologies">
-                    {getTechnologies(project).slice(0, 4).map((tech: string) => (
+                    {getTechnologies(project).map((tech: string) => (
                       <span key={tech} className="tech-tag">{tech}</span>
                     ))}
-                    {getTechnologies(project).length > 4 && (
-                      <span className="tech-tag more">+{getTechnologies(project).length - 4}</span>
-                    )}
-                  </div>
-                  <div className="project-links">
-                    {getLinks(project)}
                   </div>
                 </div>
               </div>
