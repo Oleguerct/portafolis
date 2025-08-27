@@ -1,0 +1,14 @@
+# Temporary files
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Node modules (if needed in future)
+node_modules/
+
+# Build artifacts
+dist/
+build/
+
+# Logs
+*.log
