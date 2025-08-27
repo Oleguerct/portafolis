@@ -135,31 +135,13 @@
 }
 
 .project-content {
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
-.project-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
-}
 
-.project-category {
-  background-color: #dbeafe;
-  color: #1e40af;
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-weight: 500;
-}
-
-.project-date {
-  color: #6b7280;
-}
 
 .project-title {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .project-title a {
@@ -177,14 +159,13 @@
 .project-description {
   color: #6b7280;
   line-height: 1.6;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .project-technologies {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .tech-tag {
@@ -196,60 +177,7 @@
   font-weight: 500;
 }
 
-.tech-tag.more {
-  background-color: #e5e7eb;
-  color: #6b7280;
-}
 
-.project-links {
-  display: flex;
-  gap: 1rem;
-}
-
-.project-link {
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.project-link.demo {
-  background-color: #10b981;
-  color: white;
-}
-
-.project-link.demo:hover {
-  background-color: #059669;
-}
-
-.project-link.github {
-  background-color: #374151;
-  color: white;
-}
-
-.project-link.github:hover {
-  background-color: #1f2937;
-}
-
-.project-link.case-study {
-  background-color: #7c3aed;
-  color: white;
-}
-
-.project-link.case-study:hover {
-  background-color: #6d28d9;
-}
-
-.project-link.site {
-  background-color: #059669;
-  color: white;
-}
-
-.project-link.site:hover {
-  background-color: #047857;
-}
 
 .no-projects {
   text-align: center;
@@ -276,10 +204,6 @@
   }
   
   .filter-buttons {
-    justify-content: center;
-  }
-  
-  .project-links {
     justify-content: center;
   }
 }
