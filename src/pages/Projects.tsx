@@ -16,8 +16,9 @@ const Projects: React.FC = () => {
         <header className="projects-header">
           <h1>Els Meus Projectes</h1>
           <p>
-            Descobreix una selecció dels projectes més rellevants que he desenvolupat, 
-            centrats en tecnologies web modernes i solucions innovadores.
+            Aquests són projectes de l'època en què feia desenvolupament web (ara faig producte). 
+            Alguns estan mantinguts per altres empreses i altres ja no ho estan, per tant tant 
+            el codi com el contingut pot haver canviat, fallar o directament deixar d'estar operatius.
           </p>
         </header>
 
