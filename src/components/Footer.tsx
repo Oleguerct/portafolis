@@ -31,9 +31,6 @@ const Footer: React.FC = () => {
             <p>Python • PostgreSQL • AWS</p>
           </div>
         </div>
-        <div className="footer-bottom">
-          <p>&copy; 2023 Portafoli del Programador. Tots els drets reservats.</p>
-        </div>
       </div>
     </footer>
   );
