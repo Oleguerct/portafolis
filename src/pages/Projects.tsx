@@ -61,18 +61,6 @@ const Projects: React.FC = () => {
               return 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzM3NDE1MSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiM5Y2EzYWYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5JbWF0Z2UgZGVsIFByb2plY3RlPC90ZXh0Pjwvc3ZnPg==';
             };
 
-            // Get description based on project type - shortened for cleaner cards
-            const getDescription = (project: any) => {
-              let description;
-              if (isLegacyProject(project)) {
-                description = project.shortDescription;
-              } else {
-                description = project.summary;
-              }
-              // Truncate long descriptions to keep cards compact
-              return description.length > 120 ? description.substring(0, 120) + '...' : description;
-            };
-
             // Get technologies based on project type - limit to 3 for cleaner cards
             const getTechnologies = (project: any) => {
               let technologies;
@@ -108,7 +96,6 @@ const Projects: React.FC = () => {
                   <h3 className="project-title">
                     <Link to={`/projects/${project.id}`}>{project.title}</Link>
                   </h3>
-                  <p className="project-description">{getDescription(project)}</p>
                   <div className="project-technologies">
                     {getTechnologies(project).map((tech: string) => (
                       <span key={tech} className="tech-tag">{tech}</span>
