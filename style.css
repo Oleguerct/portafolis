@@ -1,0 +1,94 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #e9ecef;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #495057;
+}
+
+/* Main content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Projects section - single column layout */
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Minimalistic project cards */
+.project-card {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #495057;
+}
+
+.project-link {
+    display: inline-block;
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.project-link:hover {
+    background-color: #495057;
+    color: #fff;
+    border-color: #495057;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .project-card {
+        padding: 1rem;
+    }
+}
