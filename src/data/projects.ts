@@ -34,7 +34,7 @@ export const projects: Project[] = [
     id: "smoking-paper-ecommerce",
     title: "E-commerce Smoking Paper",
     client: "Smoking Paper",
-    category: ["E-commerce", "Web development", "UX/UI"],
+    category: ["E-commerce", "Web development"],
     links: {
       caseStudy: "https://sumatd.com/proyectos/e-commerce-smoking-paper/",
       site: "https://www.smokingpaper.com/products/"
@@ -104,7 +104,7 @@ export const projects: Project[] = [
     id: "romanesco-studio-web",
     title: "Web Corporativa Romanesco Studio",
     client: "Romanesco Studio",
-    category: ["Web development", "corporate", "UX/UI"],
+    category: ["Web development", "corporate"],
     links: {
       caseStudy: "https://sumatd.com/proyectos/web-corporativa-romanesco-studio/",
       site: "https://romanescostudio.com/"
@@ -177,7 +177,7 @@ export const projects: Project[] = [
     id: "cbd-show-ecommerce",
     title: "E-commerce The CBD Show",
     client: "The CBD Show",
-    category: ["E-commerce", "Web development", "UX/UI"],
+    category: ["E-commerce", "Web development"],
     links: {
       caseStudy: "https://sumatd.com/proyectos/e-commerce-the-cbd-show/",
       site: "https://thecbdshow.com/"
@@ -250,7 +250,7 @@ export const projects: Project[] = [
     id: "neumaticos-seminuevos-corporativa",
     title: "Web Corporativa Neumáticos Seminuevos",
     client: "Neumáticos Seminuevos",
-    category: ["Web development", "Corporate", "UX/UI"],
+    category: ["Web development", "Corporate"],
     links: {
       caseStudy: "https://sumatd.com/proyectos/web-corporativa-neumaticos-seminuevos/"
     },
@@ -319,7 +319,7 @@ export const projects: Project[] = [
     id: "hazte-cliente-recomendador-tarifas",
     title: "Recomendador de Tarifes",
     client: "Client Confidencial",
-    category: ["Web development", "UX/UI", "Backend"],
+    category: ["Web development", "Backend"],
     links: {
       caseStudy: "https://sumatd.com/proyectos/hazte-cliente-recomendador-de-tarifas/"
     },
@@ -385,7 +385,7 @@ export const projects: Project[] = [
     id: "leading-global-consulting-web",
     title: "Web Corporativa Leading Global Consulting",
     client: "Leading Global Consulting",
-    category: ["Web development", "Corporate", "UX/UI"],
+    category: ["Web development", "Corporate"],
     links: {
       caseStudy: "https://sumatd.com/proyectos/web-corporativa-leading-global-consulting/"
     },
@@ -452,7 +452,7 @@ export const projects: Project[] = [
     id: "engiser-brand-ecommerce",
     title: "Disseny de marca i e-commerce Engiser",
     client: "Engiser",
-    category: ["E-commerce", "Web development", "UX/UI"],
+    category: ["E-commerce", "Web development"],
     links: {
       caseStudy: "https://sumatd.com/proyectos/diseno-de-marca-y-e-commerce-para-engiser-101/"
     },
@@ -502,7 +502,7 @@ export const projects: Project[] = [
     id: "suma-tax-corporate",
     title: "Web Corporativa Suma Tax",
     client: "Suma Tax",
-    category: ["Web development", "Corporate", "UX/UI"],
+    category: ["Web development", "Corporate"],
     links: {
       caseStudy: "https://sumatd.com/proyectos/web-corporativa-suma-tax/"
     },
@@ -514,7 +514,7 @@ export const projects: Project[] = [
       long:
         "Vam desenvolupar la web corporativa de Suma Tax amb l'objectiu de crear una presència digital sòlida que reflectís la professionalitat i experiència de l'empresa en el sector fiscal i comptable. " +
         "El projecte es va centrar en crear una estructura clara i navegable que permetés als clients potencials trobar fàcilment la informació sobre els serveis oferits. " +
-        "Es va priorititzar un disseny net i professional, amb una paleta de colors que transmet confiança i serietat, adequada per al sector financer. " +
+        "Es va prioritzar un disseny net i professional, amb una paleta de colors que transmet confiança i serietat, adequada per al sector financer. " +
         "La web inclou seccions detallades sobre els diferents serveis, informació corporativa, i canals de contacte optimitzats per a la conversió de visitants en clients potencials."
     },
     techStack: [
@@ -564,7 +564,7 @@ export const projects: Project[] = [
     id: "juan-fuentes-stand",
     title: "Stand Juan Fuentes",
     client: "Juan Fuentes",
-    category: ["Web development", "UX/UI", "Brand"],
+    category: ["Web development", "Brand"],
     links: {
       caseStudy: "https://sumatd.com/proyectos/juan-fuentes-stand/"
     },
@@ -582,8 +582,7 @@ export const projects: Project[] = [
       "HTML5",
       "CSS3",
       "JavaScript",
-      "Responsive Design",
-      "UX/UI Design"
+      "Responsive Design"
     ],
     features: [
       "Disseny responsiu i modern",
@@ -603,7 +602,6 @@ export const projects: Project[] = [
       "digital",
       "brand",
       "responsive",
-      "ux-ui",
       "presentation"
     ]
   },
@@ -612,7 +610,7 @@ export const projects: Project[] = [
     id: "metal-converter-spain-website",
     title: "Web Corporativa Metal Converter Spain",
     client: "Metal Converter Spain",
-    category: ["Web development", "Corporate website", "UX/UI"],
+    category: ["Web development", "Corporate website"],
     links: {
       caseStudy: "https://sumatd.com/proyectos/web-corporativa-metal-converter-spain/"
     },
