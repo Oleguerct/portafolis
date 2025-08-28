@@ -27,6 +27,9 @@ const Footer: React.FC = () => {
             <p>PHP • PostgreSQL • Symfony</p>
           </div>
         </div>
+        <div className="footer-credit">
+          <p>Creat amb l'Agent de Copilot</p>
+        </div>
       </div>
     </footer>
   );
