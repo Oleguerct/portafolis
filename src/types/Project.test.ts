@@ -31,4 +31,19 @@ describe('Project types', () => {
       expect(smokingPaperProject.techStack).toContain('React');
     }
   });
+
+  test('romanesco-studio-web project should be properly structured', () => {
+    const romanescoProject = projects.find(p => p.id === 'romanesco-studio-web');
+    
+    expect(romanescoProject).toBeDefined();
+    
+    if (romanescoProject) {
+      expect(romanescoProject.client).toBe('Romanesco Studio');
+      expect(romanescoProject.features).toBeDefined();
+      expect(romanescoProject.images).toBeDefined();
+      expect(romanescoProject.techStack).toContain('WordPress');
+      expect(romanescoProject.category).toContain('corporate');
+      expect(romanescoProject.tags).toContain('corporate');
+    }
+  });
 });

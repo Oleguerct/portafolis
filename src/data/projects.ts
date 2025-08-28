@@ -20,6 +20,11 @@ export const projectCategories: ProjectCategory[] = [
     id: 'fullstack',
     name: 'Full Stack',
     description: 'Projectes complets amb frontend i backend integrats'
+  },
+  {
+    id: 'corporate',
+    name: 'Webs Corporatives',
+    description: 'Websites corporatius i institucionals amb enfoc professional'
   }
 ];
 
@@ -92,6 +97,79 @@ export const projects: Project[] = [
       "loyalty",
       "affiliation",
       "discounts"
+    ]
+  },
+  // New project: Romanesco Studio Corporate Website
+  {
+    id: "romanesco-studio-web",
+    title: "Web Corporativa Romanesco Studio",
+    client: "Romanesco Studio",
+    category: ["Web development", "corporate", "UX/UI"],
+    links: {
+      caseStudy: "https://sumatd.com/proyectos/web-corporativa-romanesco-studio/",
+      site: "https://romanescostudio.com/"
+    },
+    summary:
+      "Web corporativa moderna i elegant per a un estudi de disseny, amb enfoc en la presentació de serveis i portafoli de projectes.",
+    description: {
+      short:
+        "Desenvolupament d'una web corporativa per a Romanesco Studio amb disseny modern, navegació intuïtiva i presentació professional dels seus serveis de disseny.",
+      long:
+        "Vam desenvolupar la web corporativa de Romanesco Studio amb un enfoc modern i professional que reflecteix la qualitat del seu treball en disseny. " +
+        "La web prioritza una presentació clara dels serveis de l'estudi, amb seccions dedicades al portafoli, l'equip i els processos de treball. " +
+        "S'ha implementat un sistema de gestió de continguts que permet a l'equip actualitzar fàcilment els projectes i notícies. " +
+        "El disseny responsive garanteix una experiència òptima en tots els dispositius, mentre que l'optimització SEO millora la visibilitat en cercadors. " +
+        "També s'ha integrat un formulari de contacte avançat amb validació i sistema de notificacions automàtiques."
+    },
+    techStack: [
+      "WordPress",
+      "PHP",
+      "JavaScript",
+      "SCSS",
+      "MySQL",
+      "ACF",
+      "Elementor",
+      "WP Rocket"
+    ],
+    features: [
+      "Disseny responsive i modern",
+      "Sistema de gestió de portafoli",
+      "Formulari de contacte avançat",
+      "Optimització SEO i rendiment",
+      "Integració amb xarxes socials",
+      "Sistema de gestió de continguts"
+    ],
+    images: [
+      {
+        url: "https://sumatd.com/wp-content/uploads/2023/03/romanesco-home.jpg",
+        alt: "Pàgina principal de Romanesco Studio amb disseny modern",
+        caption: "Pàgina d'inici amb hero visual impactant."
+      },
+      {
+        url: "https://sumatd.com/wp-content/uploads/2023/03/romanesco-portfolio.jpg",
+        alt: "Secció de portafoli amb projectes destacats",
+        caption: "Galeria de projectes amb filtres i categories."
+      },
+      {
+        url: "https://sumatd.com/wp-content/uploads/2023/03/romanesco-services.jpg",
+        alt: "Pàgina de serveis amb informació detallada",
+        caption: "Presentació clara dels serveis oferits."
+      },
+      {
+        url: "https://sumatd.com/wp-content/uploads/2023/03/romanesco-contact.jpg",
+        alt: "Formulari de contacte i informació de l'estudi",
+        caption: "Formulari de contacte integrat amb mapa."
+      }
+    ],
+    tags: [
+      "corporate",
+      "design-studio",
+      "portfolio",
+      "cms",
+      "responsive",
+      "seo",
+      "contact-form",
+      "wordpress"
     ]
   },
 ];
