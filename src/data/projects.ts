@@ -245,4 +245,74 @@ export const projects: Project[] = [
       "woocommerce"
     ]
   },
+  // Web Corporativa Neumáticos Seminuevos
+  {
+    id: "neumaticos-seminuevos-corporativa",
+    title: "Web Corporativa Neumáticos Seminuevos",
+    client: "Neumáticos Seminuevos",
+    category: ["Web development", "Corporate", "UX/UI"],
+    links: {
+      caseStudy: "https://sumatd.com/proyectos/web-corporativa-neumaticos-seminuevos/"
+    },
+    summary:
+      "Web corporativa per a empresa de neumàtics seminous amb disseny modern, catàleg de productes i sistema de contacte integrat.",
+    description: {
+      short:
+        "Desenvolupament d'una web corporativa moderna per a empresa especialitzada en neumàtics seminous, amb enfoc en experiència d'usuari i conversió.",
+      long:
+        "Vam crear una web corporativa completa per a una empresa especialitzada en neumàtics seminous, prioritzant la presentació clara dels serveis i productes. " +
+        "El projecte inclou un disseny modern i responsive, catàleg de productes organitzat per categories, sistema de contacte integrat i optimització SEO. " +
+        "La web està pensada per generar confiança en els clients potencials i facilitar la conversió a través d'un disseny net i una navegació intuïtiva. " +
+        "S'ha implementat un sistema de gestió de continguts que permet a l'empresa actualitzar fàcilment la informació de productes i serveis."
+    },
+    techStack: [
+      "WordPress",
+      "PHP",
+      "HTML5",
+      "CSS3/SCSS",
+      "JavaScript",
+      "MySQL",
+      "Responsive Design"
+    ],
+    features: [
+      "Disseny corporatiu modern i professional",
+      "Catàleg de productes organitzat",
+      "Sistema de contacte integrat",
+      "Disseny responsive i mobile-first",
+      "Optimització SEO",
+      "Gestió de continguts fàcil"
+    ],
+    images: [
+      {
+        url: "https://sumatd.com/wp-content/uploads/2023/03/neumaticos-home.jpg",
+        alt: "Pàgina principal de la web de Neumàtics Seminuevos",
+        caption: "Home page amb hero impactant i presentació de serveis."
+      },
+      {
+        url: "https://sumatd.com/wp-content/uploads/2023/03/neumaticos-catalogo.jpg",
+        alt: "Catàleg de productes de neumàtics",
+        caption: "Catàleg organitzat per categories i tipus de vehicle."
+      },
+      {
+        url: "https://sumatd.com/wp-content/uploads/2023/03/neumaticos-contacto.jpg",
+        alt: "Pàgina de contacte amb formulari integrat",
+        caption: "Sistema de contacte amb formulari i informació de localització."
+      },
+      {
+        url: "https://sumatd.com/wp-content/uploads/2023/03/neumaticos-mobile.jpg",
+        alt: "Vista mòbil de la web",
+        caption: "Experiència optimitzada per a dispositius mòbils."
+      }
+    ],
+    tags: [
+      "corporate",
+      "automotive",
+      "tires",
+      "catalog",
+      "contact-form",
+      "responsive",
+      "seo",
+      "cms"
+    ]
+  },
 ];

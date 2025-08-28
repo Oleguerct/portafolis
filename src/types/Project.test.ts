@@ -34,9 +34,9 @@ describe('Project types', () => {
 
   test('romanesco-studio-web project should be properly structured', () => {
     const romanescoProject = projects.find(p => p.id === 'romanesco-studio-web');
-    
+
     expect(romanescoProject).toBeDefined();
-    
+
     if (romanescoProject) {
       expect(romanescoProject.client).toBe('Romanesco Studio');
       expect(romanescoProject.features).toBeDefined();
@@ -44,6 +44,21 @@ describe('Project types', () => {
       expect(romanescoProject.techStack).toContain('WordPress');
       expect(romanescoProject.category).toContain('corporate');
       expect(romanescoProject.tags).toContain('corporate');
+    }
+  });
+
+  test('neumaticos-seminuevos-corporativa project should be properly structured', () => {
+    const neumaticosProject = projects.find(p => p.id === 'neumaticos-seminuevos-corporativa');
+
+    expect(neumaticosProject).toBeDefined();
+
+    if (neumaticosProject) {
+      expect(neumaticosProject.client).toBe('Neumáticos Seminuevos');
+      expect(neumaticosProject.features).toBeDefined();
+      expect(neumaticosProject.images).toBeDefined();
+      expect(neumaticosProject.techStack).toContain('WordPress');
+      expect(neumaticosProject.category).toContain('Web development');
+      expect(neumaticosProject.links.caseStudy).toBe('https://sumatd.com/proyectos/web-corporativa-neumaticos-seminuevos/');
     }
   });
 });
