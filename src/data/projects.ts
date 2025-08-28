@@ -51,14 +51,12 @@ export const projects: Project[] = [
         "També es va cuidar la gestió del consentiment de cookies i una base sòlida per al tracking d'esdeveniments d'e-commerce."
     },
     techStack: [
-      "React",
-      "TypeScript", 
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Stripe API",
-      "Redis",
-      "Docker"
+      "WordPress",
+      "PHP",
+      "HTML5",
+      "CSS3/SCSS",
+      "JavaScript",
+      "WooCommerce"
     ],
     features: [
       "Fitxa de producte clara i directa",
@@ -124,12 +122,9 @@ export const projects: Project[] = [
     techStack: [
       "WordPress",
       "PHP",
-      "JavaScript",
-      "SCSS",
-      "MySQL",
-      "ACF",
-      "Elementor",
-      "WP Rocket"
+      "HTML5",
+      "CSS3/SCSS",
+      "JavaScript"
     ],
     features: [
       "Disseny responsive i modern",
@@ -196,13 +191,11 @@ export const projects: Project[] = [
     },
     techStack: [
       "WordPress",
-      "WooCommerce",
       "PHP",
+      "HTML5",
+      "CSS3/SCSS",
       "JavaScript",
-      "SCSS",
-      "MySQL",
-      "Docker",
-      "AWS"
+      "WooCommerce"
     ],
     features: [
       "Catàleg amb filtres avançats per tipus i concentració",
@@ -270,9 +263,7 @@ export const projects: Project[] = [
       "PHP",
       "HTML5",
       "CSS3/SCSS",
-      "JavaScript",
-      "MySQL",
-      "Responsive Design"
+      "JavaScript"
     ],
     features: [
       "Disseny corporatiu modern i professional",
@@ -335,14 +326,11 @@ export const projects: Project[] = [
         "També integra seguiment d'analítiques avançades per mesurar l'eficàcia del procés de recomanació i optimitzar continuament l'experiència d'usuari."
     },
     techStack: [
-      "JavaScript",
-      "Vue.js",
+      "WordPress",
       "PHP",
-      "Laravel",
-      "MySQL",
-      "API REST",
-      "CSS3",
-      "HTML5"
+      "HTML5",
+      "CSS3/SCSS",
+      "JavaScript"
     ],
     features: [
       "Qüestionari dinàmic personalitzat",
@@ -400,12 +388,11 @@ export const projects: Project[] = [
         "L'arquitectura responsive garanteix una experiència òptima en tots els dispositius, mentre que l'optimització SEO assegura una bona visibilitat en cercadors per atreure clients potencials."
     },
     techStack: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "PHP",
       "WordPress",
-      "MySQL"
+      "PHP",
+      "HTML5",
+      "CSS3/SCSS",
+      "JavaScript"
     ],
     features: [
       "Disseny corporatiu professional",
@@ -468,12 +455,11 @@ export const projects: Project[] = [
     },
     techStack: [
       "WordPress",
-      "WooCommerce",
       "PHP",
-      "JavaScript",
-      "CSS3",
       "HTML5",
-      "Adobe Creative Suite"
+      "CSS3/SCSS",
+      "JavaScript",
+      "WooCommerce"
     ],
     features: [
       "Disseny complet d'identitat de marca",
@@ -518,12 +504,11 @@ export const projects: Project[] = [
         "La web inclou seccions detallades sobre els diferents serveis, informació corporativa, i canals de contacte optimitzats per a la conversió de visitants en clients potencials."
     },
     techStack: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
       "WordPress",
       "PHP",
-      "MySQL"
+      "HTML5",
+      "CSS3/SCSS",
+      "JavaScript"
     ],
     features: [
       "Disseny corporatiu professional",
@@ -579,10 +564,11 @@ export const projects: Project[] = [
         "S'ha posat especial atenció en la usabilitat i l'accessibilitat, creant una plataforma que permet als visitants descobrir fàcilment la informació rellevant i interactuar amb el contingut de manera natural."
     },
     techStack: [
+      "WordPress",
+      "PHP",
       "HTML5",
-      "CSS3",
-      "JavaScript",
-      "Responsive Design"
+      "CSS3/SCSS",
+      "JavaScript"
     ],
     features: [
       "Disseny responsiu i modern",
@@ -626,12 +612,11 @@ export const projects: Project[] = [
         "amb una arquitectura d'informació optimitzada per facilitar la navegació i la captació de clients potencials."
     },
     techStack: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
       "WordPress",
       "PHP",
-      "MySQL"
+      "HTML5",
+      "CSS3/SCSS",
+      "JavaScript"
     ],
     features: [
       "Disseny corporatiu modern i professional",
