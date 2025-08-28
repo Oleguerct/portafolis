@@ -8,8 +8,7 @@ const Footer: React.FC = () => {
         <div className="footer-content">
           <div className="footer-section">
             <h3>Contacte</h3>
-            <p>Email: programador@example.com</p>
-            <p>Telèfon: +34 123 456 789</p>
+            <p>Email: oleguercongost@gmail.com</p>
           </div>
           <div className="footer-section">
             <h3>Xarxes Socials</h3>
@@ -19,9 +18,6 @@ const Footer: React.FC = () => {
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                 LinkedIn
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                Twitter
               </a>
             </div>
           </div>
