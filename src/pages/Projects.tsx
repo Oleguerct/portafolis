@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { projects, projectCategories } from '../data/projects';
-import { isEnhancedProject, isLegacyProject } from '../types/Project';
 import './Projects.css';
 
 const Projects: React.FC = () => {
@@ -10,11 +9,7 @@ const Projects: React.FC = () => {
   const filteredProjects = selectedCategory === 'all' 
     ? projects 
     : projects.filter(project => {
-        if (isLegacyProject(project)) {
-          return project.category === selectedCategory;
-        } else {
-          return project.category.includes(selectedCategory);
-        }
+        return project.category.includes(selectedCategory);
       });
 
   return (
@@ -50,26 +45,17 @@ const Projects: React.FC = () => {
 
         <div className="projects-grid">
           {filteredProjects.map(project => {
-            // Get image URL based on project type
+            // Get image URL from project
             const getImageUrl = (project: any) => {
-              if (isLegacyProject(project)) {
-                return project.imageUrl;
-              } else if (isEnhancedProject(project) && project.images && project.images.length > 0) {
+              if (project.images && project.images.length > 0) {
                 return project.images[0].url;
               }
               return 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzM3NDE1MSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiM5Y2EzYWYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5JbWF0Z2UgZGVsIFByb2plY3RlPC90ZXh0Pjwvc3ZnPg==';
             };
 
-            // Get technologies based on project type - limit to 3 for cleaner cards
+            // Get technologies - limit to 3 for cleaner cards
             const getTechnologies = (project: any) => {
-              let technologies;
-              if (isLegacyProject(project)) {
-                technologies = project.technologies;
-              } else {
-                technologies = project.techStack;
-              }
-              // Show only first 3 technologies to avoid overwhelming the card
-              return technologies.slice(0, 3);
+              return project.techStack.slice(0, 3);
             };
 
 

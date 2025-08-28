@@ -1,4 +1,4 @@
-import { Project, ProjectCategory, LegacyProject, EnhancedProject } from '../types/Project';
+import { Project, ProjectCategory } from '../types/Project';
 
 export const projectCategories: ProjectCategory[] = [
   {
@@ -93,5 +93,5 @@ export const projects: Project[] = [
       "affiliation",
       "discounts"
     ]
-  } as EnhancedProject,
+  },
 ];

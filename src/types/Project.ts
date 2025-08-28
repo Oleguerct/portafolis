@@ -5,22 +5,8 @@ export interface ProjectBase {
   features: string[];
 }
 
-// Legacy project structure (for existing projects)
-export interface LegacyProject extends ProjectBase {
-  shortDescription: string;
-  fullDescription: string;
-  technologies: string[];
-  category: string;
-  date: string;
-  imageUrl: string;
-  demoUrl?: string;
-  githubUrl?: string;
-  challenges: string[];
-  learnings: string[];
-}
-
-// New project structure (for enhanced projects like Smoking Paper)
-export interface EnhancedProject extends ProjectBase {
+// Project structure
+export interface Project extends ProjectBase {
   client: string;
   category: string[];
   links: {
@@ -39,18 +25,6 @@ export interface EnhancedProject extends ProjectBase {
     caption: string;
   }>;
   tags: string[];
-}
-
-// Union type for all projects
-export type Project = LegacyProject | EnhancedProject;
-
-// Type guards to differentiate between project types
-export function isEnhancedProject(project: Project): project is EnhancedProject {
-  return 'client' in project && 'summary' in project;
-}
-
-export function isLegacyProject(project: Project): project is LegacyProject {
-  return 'shortDescription' in project && 'fullDescription' in project;
 }
 
 export interface ProjectCategory {
