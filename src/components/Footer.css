@@ -46,6 +46,19 @@
   color: #60a5fa;
 }
 
+.footer-credit {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid #374151;
+}
+
+.footer-credit p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #9ca3af;
+  font-style: italic;
+}
+
 @media (max-width: 768px) {
   .footer-container {
     padding: 0 1rem;
