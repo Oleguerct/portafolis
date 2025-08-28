@@ -117,60 +117,6 @@ const ProjectDetail: React.FC = () => {
               </div>
             </section>
           )}
-
-          <section className="project-section">
-            <h2>Responsabilitats</h2>
-            <ul className="responsibilities-list">
-              {project.responsibilities.map((responsibility, index) => (
-                <li key={index}>{responsibility}</li>
-              ))}
-            </ul>
-          </section>
-
-          <section className="project-section">
-            <h2>Característiques Principals</h2>
-            <ul className="features-list">
-              {project.features.map((feature, index) => (
-                <li key={index}>{feature}</li>
-              ))}
-            </ul>
-          </section>
-
-          {project.rewards && (
-            <section className="project-section rewards-section">
-              <h2>Sistema de Recompenses</h2>
-              <p className="rewards-scope">{project.rewards.scope}</p>
-              
-              <div className="rewards-content">
-                <div className="rewards-subsection">
-                  <h3>Mòduls</h3>
-                  <ul className="rewards-list">
-                    {project.rewards.modules.map((module, index) => (
-                      <li key={index}>{module}</li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="rewards-subsection">
-                  <h3>Regles de Negoci</h3>
-                  <ul className="rewards-list">
-                    {project.rewards.rules.map((rule, index) => (
-                      <li key={index}>{rule}</li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="rewards-subsection">
-                  <h3>Experiència d'Usuari</h3>
-                  <ul className="rewards-list">
-                    {project.rewards.ux.map((ux, index) => (
-                      <li key={index}>{ux}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </section>
-          )}
         </>
       );
     } else {

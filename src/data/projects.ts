@@ -55,39 +55,12 @@ export const projects: Project[] = [
       "Redis",
       "Docker"
     ],
-    responsibilities: [
-      "Desenvolupament de la pàgina de producte (estructura i components)",
-      "Implementació de llistes i productes relacionats",
-      "Maquetació responsive i optimització mobile-first",
-      "Integració de banner/gestor de cookies i tracking d'esdeveniments",
-      "Disseny i implementació del sistema de recompenses (punts, afiliació, descomptes)",
-      "Integració del saldo i redempció al compte d'usuari i al checkout"
-    ],
     features: [
       "Fitxa de producte clara i directa",
       "Bloc de productes relacionats",
       "Disseny i comportament mobile-first",
       "Sistema de recompenses a mida (punts, afiliació, descomptes)"
     ],
-    rewards: {
-      scope:
-        "Sistema de fidelització i afiliació personalitzat, integrat end-to-end a l'e-commerce.",
-      modules: [
-        "Punts de fidelitat acumulables (compres i altres esdeveniments)",
-        "Afiliació amb atribució de referències",
-        "Descomptes i cupons generats des dels punts"
-      ],
-      rules: [
-        "Escales de punts i multiplicadors per categories/campanyes",
-        "Caducitat configurable i exclusions per producte o codi",
-        "Límit de redempció per comanda"
-      ],
-      ux: [
-        "Saldo de punts en temps real a l'àrea d'usuari",
-        "Historial de moviments i redempcions",
-        "Aplicació del descompte en un sol clic al checkout"
-      ]
-    },
     images: [
       {
         url: "https://sumatd.com/wp-content/uploads/2022/01/portada.gif",
