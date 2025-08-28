@@ -9,11 +9,10 @@ const Home: React.FC = () => {
         <div className="hero-container">
           <div className="hero-content">
             <h1 className="hero-title">
-              Hola, sóc un <span className="highlight">Programador Web</span>
+              Hola, sóc l'Oleguer, un <span className="highlight">Programador Web</span>
             </h1>
             <p className="hero-subtitle">
               Desenvolupador Full Stack especialitzat en PHP, Symfony, WordPress i Vue.js. 
-              Creo aplicacions web robustes, escalables i centrades en l'experiència d'usuari.
             </p>
             <div className="hero-buttons">
               <Link to="/projects" className="btn btn-primary">
@@ -36,11 +35,15 @@ const Home: React.FC = () => {
                 <span className="property">especialitat</span>: <span className="string">'Full Stack'</span>,
               </div>
               <div className="code-line indent">
-                <span className="property">tecnologies</span>: [<span className="string">'PHP'</span>, <span className="string">'Symfony'</span>, <span className="string">'Vue.js'</span>],
+                <span className="property">tecnologies</span>: [
+                  <span className="string">'Symfony'</span>,
+                  <span className="string">'Vue'</span>,
+                  <span className="string">'WordPress'</span>
+                  ],
               </div>
-              <div className="code-line indent">
-                <span className="property">passio</span>: <span className="string">'Programació'</span>
-              </div>
+              {/*<div className="code-line indent">*/}
+              {/*  <span className="property">passio</span>: <span className="string">'Programació'</span>*/}
+              {/*</div>*/}
               <div className="code-line">{'}'}</div>
             </div>
           </div>
