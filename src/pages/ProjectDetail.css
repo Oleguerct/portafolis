@@ -633,38 +633,43 @@
 
 /* Mobile responsive adjustments for lightbox */
 @media (max-width: 768px) {
-  .lightbox-container {
-    max-width: 95vw;
-    max-height: 95vh;
-  }
 
-  .lightbox-image {
-    max-height: 70vh;
-  }
+    .project-detail-page{
+        .lightbox-container {
+            max-width: 95vw;
+            max-height: 95vh;
+        }
 
-  .lightbox-close {
-    top: -40px;
-    right: 10px;
-    font-size: 1.5rem;
-    width: 35px;
-    height: 35px;
-  }
+        .lightbox-image {
+            max-height: 70vh;
+        }
 
-  .lightbox-nav {
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
-  }
+        .lightbox-close {
+            top: -40px;
+            right: 10px;
+            font-size: 1.5rem;
+            width: 35px;
+            height: 35px;
+        }
 
-  .lightbox-prev {
-    left: -60px;
-  }
+        .lightbox-nav {
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+        }
 
-  .lightbox-next {
-    right: -60px;
-  }
+        .lightbox-prev {
+            left: -60px;
+        }
 
-  .lightbox-caption {
-    padding: 0 1rem;
-  }
+        .lightbox-next {
+            right: -60px;
+        }
+
+        .lightbox-caption {
+            padding: 0 1rem;
+        }
+    }
+
+
 }
