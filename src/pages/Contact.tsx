@@ -42,9 +42,6 @@ const Contact: React.FC = () => {
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
                   <span>LinkedIn</span>
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-link">
-                  <span>Twitter</span>
-                </a>
               </div>
             </div>
           </div>

@@ -20,9 +20,6 @@ const Footer: React.FC = () => {
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                 LinkedIn
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                Twitter
-              </a>
             </div>
           </div>
           <div className="footer-section">
