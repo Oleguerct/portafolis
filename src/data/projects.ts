@@ -172,4 +172,77 @@ export const projects: Project[] = [
       "wordpress"
     ]
   },
+  // Enhanced project: The CBD Show E-commerce
+  {
+    id: "cbd-show-ecommerce",
+    title: "E-commerce The CBD Show",
+    client: "The CBD Show",
+    category: ["E-commerce", "Web development", "UX/UI"],
+    links: {
+      caseStudy: "https://sumatd.com/proyectos/e-commerce-the-cbd-show/",
+      site: "https://thecbdshow.com/"
+    },
+    summary:
+      "Botiga especialitzada en productes CBD amb enfocament educatiu, catàleg avançat i experiència d'usuari optimitzada per a un sector regulat.",
+    description: {
+      short:
+        "Desenvolupament d'un e-commerce especialitzat en productes CBD que combina venda online amb contingut educatiu, complint amb la normativa del sector.",
+      long:
+        "Vam crear l'e-commerce de The CBD Show amb un enfocament dual: venda de productes CBD i educació del consumidor sobre aquest sector regulat. " +
+        "La plataforma inclou un catàleg detallat amb filtres avançats per tipus de producte, concentració de CBD i propòsit d'ús. " +
+        "Cada fitxa de producte incorpora informació técnica completa, certificats d'anàlisi i guies d'ús per garantir la transparència. " +
+        "A nivell de compliment normatiu, s'ha implementat verificació d'edat, avís legal específic per CBD i restriccions geogràfiques de venda. " +
+        "L'experiència d'usuari està optimitzada amb un blog educatiu integrat, calculadora de dosificació i chat d'assessorament especialitzat."
+    },
+    techStack: [
+      "WordPress",
+      "WooCommerce",
+      "PHP",
+      "JavaScript",
+      "SCSS",
+      "MySQL",
+      "Docker",
+      "AWS"
+    ],
+    features: [
+      "Catàleg amb filtres avançats per tipus i concentració",
+      "Fitxes de producte amb certificats d'anàlisi",
+      "Sistema de verificació d'edat i compliment normatiu",
+      "Blog educatiu integrat sobre CBD",
+      "Calculadora de dosificació personalitzada",
+      "Chat d'assessorament especialitzat"
+    ],
+    images: [
+      {
+        url: "https://sumatd.com/wp-content/uploads/2023/03/cbd-portada.jpg",
+        alt: "Vista de la home de The CBD Show amb destacats de productes",
+        caption: "Pàgina principal amb selecció de productes destacats."
+      },
+      {
+        url: "https://sumatd.com/wp-content/uploads/2023/03/cbd-catalogo.jpg",
+        alt: "Catàleg de productes amb filtres avançats per concentració",
+        caption: "Sistema de filtres especialitzat per tipus de CBD."
+      },
+      {
+        url: "https://sumatd.com/wp-content/uploads/2023/03/cbd-producto.jpg",
+        alt: "Fitxa de producte amb certificats i informació tècnica",
+        caption: "Detall de producte amb certificats d'anàlisi."
+      },
+      {
+        url: "https://sumatd.com/wp-content/uploads/2023/03/cbd-blog.jpg",
+        alt: "Secció del blog educatiu sobre usos del CBD",
+        caption: "Contingut educatiu integrat a la plataforma."
+      }
+    ],
+    tags: [
+      "ecommerce",
+      "cbd",
+      "healthcare",
+      "regulated-products",
+      "educational-content",
+      "age-verification",
+      "compliance",
+      "woocommerce"
+    ]
+  },
 ];
