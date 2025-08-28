@@ -13,10 +13,10 @@ const Footer: React.FC = () => {
           <div className="footer-section">
             <h3>Xarxes Socials</h3>
             <div className="social-links">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Oleguerct" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/oleguer-congost" target="_blank" rel="noopener noreferrer">
                 LinkedIn
               </a>
             </div>
