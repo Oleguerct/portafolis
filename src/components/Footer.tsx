@@ -27,8 +27,8 @@ const Footer: React.FC = () => {
           </div>
           <div className="footer-section">
             <h3>Tecnologies</h3>
-            <p>React • TypeScript • Node.js</p>
-            <p>Python • PostgreSQL • AWS</p>
+            <p>React • Vue • Javascript</p>
+            <p>PHP • PostgreSQL • Symfony</p>
           </div>
         </div>
       </div>
