@@ -94,4 +94,71 @@ export const projects: Project[] = [
       "discounts"
     ]
   },
+  // Leading Global Consulting Corporate Website
+  {
+    id: "leading-global-consulting-web",
+    title: "Web Corporativa Leading Global Consulting",
+    client: "Leading Global Consulting",
+    category: ["Web development", "Corporate", "UX/UI"],
+    links: {
+      caseStudy: "https://sumatd.com/proyectos/web-corporativa-leading-global-consulting/"
+    },
+    summary:
+      "Desenvolupament d'una web corporativa moderna i professional per a una consultora global líder, enfocada en transmetre confiança i expertesa.",
+    description: {
+      short:
+        "Creació d'una presència digital corporativa que reflecteix els valors i l'expertesa d'una consultora internacional de primer nivell.",
+      long:
+        "Hem desenvolupat una web corporativa completa per a Leading Global Consulting, una empresa líder en consultoria global. El projecte s'ha centrat en crear una experiència digital que transmeti professionalitat, confiança i expertesa. " +
+        "La web inclou seccions dedicades als serveis de consultoria, casos d'èxit, equip directiu i informació corporativa. S'ha prioritzat un disseny net i modern que faciliti la navegació i millori l'experiència d'usuari. " +
+        "L'arquitectura responsive garanteix una experiència òptima en tots els dispositius, mentre que l'optimització SEO assegura una bona visibilitat en cercadors per atreure clients potencials."
+    },
+    techStack: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "PHP",
+      "WordPress",
+      "MySQL"
+    ],
+    features: [
+      "Disseny corporatiu professional",
+      "Secció de serveis detallada",
+      "Galeria de casos d'èxit",
+      "Formulari de contacte avançat",
+      "Optimització SEO",
+      "Disseny responsive"
+    ],
+    images: [
+      {
+        url: "https://sumatd.com/wp-content/uploads/placeholders/corporate-hero.jpg",
+        alt: "Capçalera principal de la web corporativa Leading Global Consulting",
+        caption: "Hero section amb missatge corporatiu principal."
+      },
+      {
+        url: "https://sumatd.com/wp-content/uploads/placeholders/services-section.jpg",
+        alt: "Secció de serveis de consultoria",
+        caption: "Presentació clara dels serveis oferits."
+      },
+      {
+        url: "https://sumatd.com/wp-content/uploads/placeholders/team-section.jpg",
+        alt: "Secció d'equip directiu",
+        caption: "Presentació de l'equip directiu i consultors."
+      },
+      {
+        url: "https://sumatd.com/wp-content/uploads/placeholders/contact-form.jpg",
+        alt: "Formulari de contacte corporatiu",
+        caption: "Formulari de contacte optimitzat per a leads."
+      }
+    ],
+    tags: [
+      "corporate",
+      "consulting",
+      "professional",
+      "responsive",
+      "seo",
+      "wordpress",
+      "business"
+    ]
+  },
 ];
