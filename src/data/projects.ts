@@ -560,4 +560,51 @@ export const projects: Project[] = [
       "business"
     ]
   },
+  {
+    id: "juan-fuentes-stand",
+    title: "Stand Juan Fuentes",
+    client: "Juan Fuentes",
+    category: ["Web development", "UX/UI", "Brand"],
+    links: {
+      caseStudy: "https://sumatd.com/proyectos/juan-fuentes-stand/"
+    },
+    summary:
+      "Desenvolupament d'un stand digital per a Juan Fuentes amb enfoc en l'experiència d'usuari i la presentació de marca.",
+    description: {
+      short:
+        "Creació d'un stand digital innovador que combina disseny modern amb funcionalitat intuïtiva per a la presentació de Juan Fuentes.",
+      long:
+        "Vam desenvolupar un stand digital per a Juan Fuentes que prioritza l'experiència d'usuari i la presentació visual de la marca. " +
+        "El projecte inclou un disseny responsiu i modern que s'adapta a diferents dispositius, garantint una navegació fluida i una presentació coherent del contingut. " +
+        "S'ha posat especial atenció en la usabilitat i l'accessibilitat, creant una plataforma que permet als visitants descobrir fàcilment la informació rellevant i interactuar amb el contingut de manera natural."
+    },
+    techStack: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Responsive Design",
+      "UX/UI Design"
+    ],
+    features: [
+      "Disseny responsiu i modern",
+      "Navegació intuïtiva",
+      "Presentació visual optimitzada",
+      "Experiència d'usuari fluida"
+    ],
+    images: [
+      {
+        url: "https://sumatd.com/wp-content/uploads/2022/01/portada.gif",
+        alt: "Vista principal del stand digital de Juan Fuentes",
+        caption: "Presentació principal del stand digital."
+      }
+    ],
+    tags: [
+      "stand",
+      "digital",
+      "brand",
+      "responsive",
+      "ux-ui",
+      "presentation"
+    ]
+  },
 ];
