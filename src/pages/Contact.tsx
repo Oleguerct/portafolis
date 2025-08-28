@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
       <div className="contact-container">
         <header className="contact-header">
           <h1>Contacte</h1>
-          <p>Tens un projecte en ment? Parlem!</p>
+          {/*<p>Tens un projecte en ment? Parlem!</p>*/}
         </header>
 
         <div className="contact-content">
@@ -17,19 +17,15 @@ const Contact: React.FC = () => {
             <div className="contact-methods">
               <div className="contact-method">
                 <h3>📧 Email</h3>
-                <p>programador@example.com</p>
+                <p>oleguercongost@gmail.com</p>
               </div>
               <div className="contact-method">
                 <h3>📱 Telèfon</h3>
-                <p>+34 123 456 789</p>
+                <p>+34 678 78 11 06</p>
               </div>
               <div className="contact-method">
                 <h3>📍 Ubicació</h3>
-                <p>Barcelona, Catalunya</p>
-              </div>
-              <div className="contact-method">
-                <h3>🕒 Disponibilitat</h3>
-                <p>Dilluns a Divendres, 9:00 - 18:00</p>
+                <p>Bordils, Catalunya</p>
               </div>
             </div>
 
@@ -42,9 +38,9 @@ const Contact: React.FC = () => {
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
                   <span>LinkedIn</span>
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-link">
-                  <span>Twitter</span>
-                </a>
+                {/*<a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-link">*/}
+                {/*  <span>Twitter</span>*/}
+                {/*</a>*/}
               </div>
             </div>
           </div>

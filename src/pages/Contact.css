@@ -36,7 +36,7 @@
   padding: 3rem;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  max-width: 600px;
+  max-width: 800px;
   width: 100%;
 }
 
@@ -68,6 +68,10 @@
   color: #4b5563;
   margin: 0;
   font-weight: 500;
+}
+
+.social-links {
+  display: block;
 }
 
 .social-links h3 {
