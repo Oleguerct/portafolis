@@ -94,4 +94,67 @@ export const projects: Project[] = [
       "discounts"
     ]
   },
+  // Suma Tax Corporate Website
+  {
+    id: "suma-tax-corporate",
+    title: "Web Corporativa Suma Tax",
+    client: "Suma Tax",
+    category: ["Web development", "Corporate", "UX/UI"],
+    links: {
+      caseStudy: "https://sumatd.com/proyectos/web-corporativa-suma-tax/"
+    },
+    summary:
+      "Desenvolupament d'una web corporativa moderna per a Suma Tax, centrada en la presentació de serveis fiscals i comptables amb un disseny professional i accessible.",
+    description: {
+      short:
+        "Creació d'una presència digital professional per a Suma Tax que transmet confiança i professionalitat en el sector dels serveis fiscals i comptables.",
+      long:
+        "Vam desenvolupar la web corporativa de Suma Tax amb l'objectiu de crear una presència digital sòlida que reflectís la professionalitat i experiència de l'empresa en el sector fiscal i comptable. " +
+        "El projecte es va centrar en crear una estructura clara i navegable que permetés als clients potencials trobar fàcilment la informació sobre els serveis oferits. " +
+        "Es va priorititzar un disseny net i professional, amb una paleta de colors que transmet confiança i serietat, adequada per al sector financer. " +
+        "La web inclou seccions detallades sobre els diferents serveis, informació corporativa, i canals de contacte optimitzats per a la conversió de visitants en clients potencials."
+    },
+    techStack: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "WordPress",
+      "PHP",
+      "MySQL"
+    ],
+    features: [
+      "Disseny corporatiu professional",
+      "Secció de serveis detallada",
+      "Formularis de contacte optimitzats",
+      "Disseny responsive i accessible",
+      "Integració amb sistemes de gestió",
+      "Optimització SEO per al sector fiscal"
+    ],
+    images: [
+      {
+        url: "https://sumatd.com/wp-content/uploads/2023/03/suma-tax-hero.jpg",
+        alt: "Vista principal de la web corporativa de Suma Tax",
+        caption: "Pàgina principal amb disseny corporatiu professional."
+      },
+      {
+        url: "https://sumatd.com/wp-content/uploads/2023/03/suma-tax-services.jpg",
+        alt: "Secció de serveis de la web de Suma Tax",
+        caption: "Presentació clara dels serveis fiscals i comptables."
+      },
+      {
+        url: "https://sumatd.com/wp-content/uploads/2023/03/suma-tax-contact.jpg",
+        alt: "Formulari de contacte de Suma Tax",
+        caption: "Formulari de contacte optimitzat per a conversions."
+      }
+    ],
+    tags: [
+      "corporate",
+      "fiscal-services",
+      "professional",
+      "responsive",
+      "seo",
+      "wordpress",
+      "business"
+    ]
+  },
 ];
