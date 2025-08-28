@@ -94,4 +94,54 @@ export const projects: Project[] = [
       "discounts"
     ]
   },
+  // Engiser project: Brand design and e-commerce
+  {
+    id: "engiser-brand-ecommerce",
+    title: "Disseny de marca i e-commerce Engiser",
+    client: "Engiser",
+    category: ["E-commerce", "Web development", "UX/UI"],
+    links: {
+      caseStudy: "https://sumatd.com/proyectos/diseno-de-marca-y-e-commerce-para-engiser-101/"
+    },
+    summary:
+      "Projecte integral de disseny de marca i desenvolupament d'e-commerce per a Engiser, combinant identitat visual i plataforma de venda online.",
+    description: {
+      short:
+        "Desenvolupament complet de la identitat de marca i implementació d'una plataforma e-commerce per a Engiser, integrant disseny visual i funcionalitat comercial.",
+      long:
+        "Projecte integral que combina el disseny de la identitat de marca d'Engiser amb el desenvolupament d'una plataforma e-commerce robusta. " +
+        "El projecte va abastar des de la conceptualització de la marca, creació del logotip i elements visuals, fins a la implementació tècnica de la botiga online. " +
+        "Es va prioritzar la coherència entre la identitat visual i l'experiència d'usuari a la plataforma digital, assegurant una presència online sòlida i professional per al client."
+    },
+    techStack: [
+      "WordPress",
+      "WooCommerce",
+      "PHP",
+      "JavaScript",
+      "CSS3",
+      "HTML5",
+      "Adobe Creative Suite"
+    ],
+    features: [
+      "Disseny complet d'identitat de marca",
+      "Desenvolupament d'e-commerce personalitzat",
+      "Integració de marca i experiència digital",
+      "Plataforma de venda online optimitzada"
+    ],
+    images: [
+      {
+        url: "https://sumatd.com/wp-content/uploads/placeholder-engiser.jpg",
+        alt: "Presentació de la identitat de marca d'Engiser",
+        caption: "Identitat visual i aplicacions de marca."
+      }
+    ],
+    tags: [
+      "brand-design",
+      "ecommerce",
+      "identity",
+      "wordpress",
+      "woocommerce",
+      "web-development"
+    ]
+  },
 ];
