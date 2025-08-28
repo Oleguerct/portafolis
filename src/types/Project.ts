@@ -33,13 +33,6 @@ export interface EnhancedProject extends ProjectBase {
     long: string;
   };
   techStack: string[];
-  responsibilities: string[];
-  rewards?: {
-    scope: string;
-    modules: string[];
-    rules: string[];
-    ux: string[];
-  };
   images: Array<{
     url: string;
     alt: string;
