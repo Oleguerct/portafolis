@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { projects, projectCategories } from '../data/projects';
 import { Project, isEnhancedProject, isLegacyProject } from '../types/Project';
@@ -7,6 +7,57 @@ import './ProjectDetail.css';
 const ProjectDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const project = projects.find(p => p.id === id);
+  
+  // Lightbox state
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [images, setImages] = useState<Array<{url: string, alt: string, caption: string}>>([]);
+
+  // Set images when project changes
+  useEffect(() => {
+    if (project && isEnhancedProject(project) && project.images) {
+      setImages(project.images);
+    }
+  }, [project]);
+
+  // Handle keyboard navigation
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (lightboxOpen) {
+        if (e.key === 'Escape') {
+          setLightboxOpen(false);
+        } else if (e.key === 'ArrowLeft') {
+          setCurrentImageIndex(prev => prev > 0 ? prev - 1 : images.length - 1);
+        } else if (e.key === 'ArrowRight') {
+          setCurrentImageIndex(prev => prev < images.length - 1 ? prev + 1 : 0);
+        }
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [lightboxOpen, images.length]);
+
+  // Open lightbox
+  const openLightbox = (index: number) => {
+    setCurrentImageIndex(index);
+    setLightboxOpen(true);
+  };
+
+  // Close lightbox
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+  };
+
+  // Navigate to previous image
+  const previousImage = () => {
+    setCurrentImageIndex(prev => prev > 0 ? prev - 1 : images.length - 1);
+  };
+
+  // Navigate to next image
+  const nextImage = () => {
+    setCurrentImageIndex(prev => prev < images.length - 1 ? prev + 1 : 0);
+  };
 
   if (!project) {
     return <Navigate to="/projects" replace />;
@@ -110,6 +161,9 @@ const ProjectDetail: React.FC = () => {
                       alt={image.alt}
                       className="gallery-image"
                       loading="lazy"
+                      onClick={() => openLightbox(index)}
+                      style={{ cursor: 'pointer' }}
+                      title="Fes clic per veure en gran"
                     />
                     <p className="gallery-caption">{image.caption}</p>
                   </div>
@@ -314,6 +368,45 @@ const ProjectDetail: React.FC = () => {
           </Link>
         </div>
       </div>
+
+      {/* Lightbox Modal */}
+      {lightboxOpen && images.length > 0 && (
+        <div className="lightbox-overlay" onClick={closeLightbox}>
+          <div className="lightbox-container" onClick={(e) => e.stopPropagation()}>
+            <button className="lightbox-close" onClick={closeLightbox}>
+              ✕
+            </button>
+            
+            {images.length > 1 && (
+              <button className="lightbox-nav lightbox-prev" onClick={previousImage}>
+                ❮
+              </button>
+            )}
+            
+            <div className="lightbox-content">
+              <img 
+                src={images[currentImageIndex].url} 
+                alt={images[currentImageIndex].alt}
+                className="lightbox-image"
+              />
+              <div className="lightbox-caption">
+                <p>{images[currentImageIndex].caption}</p>
+                {images.length > 1 && (
+                  <span className="lightbox-counter">
+                    {currentImageIndex + 1} / {images.length}
+                  </span>
+                )}
+              </div>
+            </div>
+            
+            {images.length > 1 && (
+              <button className="lightbox-nav lightbox-next" onClick={nextImage}>
+                ❯
+              </button>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 };
