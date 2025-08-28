@@ -315,4 +315,69 @@ export const projects: Project[] = [
       "cms"
     ]
   },
+  {
+    id: "hazte-cliente-recomendador-tarifas",
+    title: "Recomendador de Tarifes",
+    client: "Client Confidencial",
+    category: ["Web development", "UX/UI", "Backend"],
+    links: {
+      caseStudy: "https://sumatd.com/proyectos/hazte-cliente-recomendador-de-tarifas/"
+    },
+    summary:
+      "Sistema intel·ligent de recomanació de tarifes personalitzades per facilitar la conversió de visitants en clients.",
+    description: {
+      short:
+        "Desenvolupament d'una eina de recomanació de tarifes que ajuda als usuaris a trobar l'opció més adequada per les seves necessitats i facilita la conversió en clients.",
+      long:
+        "Vam crear un sistema intel·ligent de recomanació de tarifes que guia els visitants a través d'un procés personalitzat per trobar l'opció que millor s'adapti a les seves necessitats. " +
+        "L'eina combina una interfície intuïtiva amb lògica de negoci sofisticada per analitzar els requeriments de l'usuari i presentar recomanacions personalitzades. " +
+        "El sistema inclou un qüestionari dinàmic, comparació de tarifes en temps real, i un flux d'onboarding optimitzat per maximitzar les conversions. " +
+        "També integra seguiment d'analítiques avançades per mesurar l'eficàcia del procés de recomanació i optimitzar continuament l'experiència d'usuari."
+    },
+    techStack: [
+      "JavaScript",
+      "Vue.js",
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "API REST",
+      "CSS3",
+      "HTML5"
+    ],
+    features: [
+      "Qüestionari dinàmic personalitzat",
+      "Motor de recomanació intel·ligent",
+      "Comparació de tarifes en temps real",
+      "Flux d'onboarding optimitzat",
+      "Seguiment d'analítiques avançades",
+      "Interfície responsive i accessible"
+    ],
+    images: [
+      {
+        url: "https://sumatd.com/wp-content/uploads/2023/03/recomendador-hero.png",
+        alt: "Pantalla principal del recomendador de tarifes",
+        caption: "Interfície principal del sistema de recomanació."
+      },
+      {
+        url: "https://sumatd.com/wp-content/uploads/2023/03/recomendador-quiz.png",
+        alt: "Qüestionari dinàmic per personalitzar recomanacions",
+        caption: "Procés de qüestionari personalitzat."
+      },
+      {
+        url: "https://sumatd.com/wp-content/uploads/2023/03/recomendador-results.png",
+        alt: "Pàgina de resultats amb recomanacions personalitzades",
+        caption: "Resultats i comparació de tarifes recomanades."
+      }
+    ],
+    tags: [
+      "recommendation-engine",
+      "conversion-optimization",
+      "dynamic-forms",
+      "personalization",
+      "analytics",
+      "lead-generation",
+      "vue",
+      "laravel"
+    ]
+  },
 ];
