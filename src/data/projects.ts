@@ -94,4 +94,65 @@ export const projects: Project[] = [
       "discounts"
     ]
   },
+  // Corporate website: Metal Converter Spain
+  {
+    id: "metal-converter-spain-website",
+    title: "Web Corporativa Metal Converter Spain",
+    client: "Metal Converter Spain",
+    category: ["Web development", "Corporate website", "UX/UI"],
+    links: {
+      caseStudy: "https://sumatd.com/proyectos/web-corporativa-metal-converter-spain/"
+    },
+    summary:
+      "Lloc web corporatiu per a Metal Converter Spain, especialitzada en conversió i tractament de metalls.",
+    description: {
+      short:
+        "Desenvolupament d'un lloc web corporatiu modern per a Metal Converter Spain, enfocant-se en la presentació professional dels serveis de conversió i tractament de metalls.",
+      long:
+        "Vam crear un lloc web corporatiu per a Metal Converter Spain que reflecteix la seva expertesa en conversió i tractament de metalls. " +
+        "El projecte va incloure un disseny modern i professional que transmet confiança i solidesa tècnica. " +
+        "La web presenta de manera clara els serveis de l'empresa, la seva trajectòria i capacitats tècniques, " +
+        "amb una arquitectura d'informació optimitzada per facilitar la navegació i la captació de clients potencials."
+    },
+    techStack: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "WordPress",
+      "PHP",
+      "MySQL"
+    ],
+    features: [
+      "Disseny corporatiu modern i professional",
+      "Presentació clara dels serveis",
+      "Secció sobre l'empresa i trajectòria",
+      "Formulari de contacte optimitzat",
+      "Disseny responsive"
+    ],
+    images: [
+      {
+        url: "https://sumatd.com/wp-content/uploads/2023/01/metal-converter-hero.jpg",
+        alt: "Vista principal del lloc web de Metal Converter Spain",
+        caption: "Pàgina principal amb disseny corporatiu modern."
+      },
+      {
+        url: "https://sumatd.com/wp-content/uploads/2023/01/metal-converter-services.jpg",
+        alt: "Secció de serveis de Metal Converter Spain",
+        caption: "Presentació dels serveis de conversió de metalls."
+      },
+      {
+        url: "https://sumatd.com/wp-content/uploads/2023/01/metal-converter-about.jpg",
+        alt: "Secció sobre l'empresa Metal Converter Spain",
+        caption: "Informació corporativa i trajectòria de l'empresa."
+      }
+    ],
+    tags: [
+      "corporate",
+      "industrial",
+      "metals",
+      "responsive",
+      "wordpress",
+      "professional"
+    ]
+  },
 ];
